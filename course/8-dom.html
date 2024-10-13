@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dom</title>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button class="js-button">Second button</button>
+
+    <script>
+      /* document.body.innerHTML = 'hello';
+        document.title = 'Good Job!';
+      */
+
+      /*console.log(document.title);
+      document.title = 'Change';
+
+      console.log(document.body);
+      console.log(typeof document.body);
+
+      console.log(document.body.innerHTML);
+      document.body.innerHTML = '<button>Good Job!</button>';
+      */
+
+      //  call for selected element
+      console.log(document.querySelector('button').innerHTML);
+      document.querySelector('button').innerHTML = 'change';
+
+      // the . is used to called for specific class
+      console.log(document.querySelector('.js-button'));
+
+      const buttonElement  = document.querySelector('.js-button');
+      console.log(buttonElement);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+body {
+  font-family: Arial;
+  align-items: center;
+}
+.slider-left {
+  width: 75px;
+  text-align: right;
+  margin-right: 10px;
+  float: left;
+}
+  
+.slider-center, .slider {
+width: 170px;
+}
+
+.slider-right {
+width: 50px;
+text-align: left;
+margin-left: 10px;
+float: right;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 35px 35px 35px 35px;
+  margin: 10px;
+}
+
+.name-input,
+.phone-number-input,
+.check-in-input,
+.check-out-input,
+.email-input,
+.gender-input{
+  font-weight: bold;
+  font-style:oblique;
+  font-size: 18px;
+  color: black;
+  border-radius: 5px;
+  background-color: rgb(145, 145, 255);
+  color: rgb(54, 54, 252);
+  text-shadow: 2px 2px rgba(173, 170, 170, 0.961);
+}
+::placeholder {
+  color: rgb(54, 54, 252);
+  text-shadow: 2px 2px rgba(173, 170, 170, 0.961);
+}
+.booking {
+  align-items: center;
+}

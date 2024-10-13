@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissor</title>
+    <style>
+      body {
+        font-family: Arial;
+        background-color: black;
+        color:white;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .move-icon {
+        height: 50px;
+      }
+      .move-button {
+        background-color: transparent;
+        border: 3px solid white;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        margin-right: 10px;
+      }
+      .result {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+      .score {
+        margin-top: 60px;
+      }
+      .reset-button,
+      .auto-play-button{
+        background-color: white;
+        border: none;
+        padding: 8px 15px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p class ="title">Rock Paper Scissor</p>
+    <button onclick="
+    //call computerMove again to control it in funtion
+      playGame('rock');
+    " class ="move-button"><img src = "images/rock-emoji.png" class ="move-icon"></button>
+
+    <button onclick="
+      //call computerMove again to control it in funtion
+      playGame('paper');   
+      " class ="move-button"><img src = "images/paper-emoji.png" class ="move-icon"></button>
+
+    <button onclick="
+      //call computerMove again to control it in funtion
+      playGame('scissors');
+    " class ="move-button"><img src = "images/scissors-emoji.png" class ="move-icon"></button>
+    
+    <p class="js-result result"></p>
+    <p class="js-move "></p>
+    <p class="js-score score"></p>
+
+    <button onclick="
+      score.win = 0;
+      score.lose = 0;
+      score.ties = 0;
+
+      localStorage.removeItem('score');
+
+      updateScoreElement();
+    " class = "reset-button">Reset Score</button>
+
+    <button onclick="
+      autoplay();
+    " class = "auto-play-button">Auto Play</button>
+    <script src="script/12-rock-paper-scissor.js">
+      
+    </script>
+
+  </body>
+</html>
